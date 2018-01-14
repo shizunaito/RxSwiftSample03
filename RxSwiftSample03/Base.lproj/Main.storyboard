@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9dM-ge-ayf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="Grg-z7-upA">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="9dM-ge-ayf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cYE-BF-HDM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U0j-el-ML5" kind="relationship" relationship="rootViewController" id="TaY-vP-c2s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9KF-7P-Wpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="278"/>
+        </scene>
+        <!--Search GitHub Repositories-->
+        <scene sceneID="aHc-3R-KhT">
+            <objects>
+                <viewController id="U0j-el-ML5" customClass="ViewController" customModule="RxSwiftSample03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0A-Bu-TNp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nsn-6D-gMT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-UM-9wG">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Hsi-fD-Sg7">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hsi-fD-Sg7" id="HP5-tI-hj4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fb5-UM-9wG" firstAttribute="top" secondItem="nsn-6D-gMT" secondAttribute="bottom" id="Bjz-kr-ZPa"/>
+                            <constraint firstItem="Fb5-UM-9wG" firstAttribute="leading" secondItem="WWd-TY-e7F" secondAttribute="leading" id="C9b-e6-W6d"/>
+                            <constraint firstItem="nsn-6D-gMT" firstAttribute="trailing" secondItem="WWd-TY-e7F" secondAttribute="trailing" id="Lhl-Sa-sHi"/>
+                            <constraint firstItem="nsn-6D-gMT" firstAttribute="top" secondItem="WWd-TY-e7F" secondAttribute="top" id="OQU-2p-mx8"/>
+                            <constraint firstItem="Fb5-UM-9wG" firstAttribute="bottom" secondItem="WWd-TY-e7F" secondAttribute="bottom" id="SD6-oA-iyc"/>
+                            <constraint firstItem="nsn-6D-gMT" firstAttribute="leading" secondItem="WWd-TY-e7F" secondAttribute="leading" id="ZiD-qW-JeI"/>
+                            <constraint firstItem="Fb5-UM-9wG" firstAttribute="trailing" secondItem="WWd-TY-e7F" secondAttribute="trailing" id="ztA-L2-wCW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WWd-TY-e7F"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Search GitHub Repositories" id="czG-Qx-1cv"/>
+                    <connections>
+                        <outlet property="nameSearchBar" destination="nsn-6D-gMT" id="Kxh-ib-cwh"/>
+                        <outlet property="repositoryListTableView" destination="Fb5-UM-9wG" id="LkR-rq-UcX"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GwX-av-8Ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="277.51124437781112"/>
         </scene>
     </scenes>
 </document>
