@@ -20,6 +20,7 @@
 		0572BD8D200B616200503AB0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0572BD86200B616200503AB0 /* Alamofire.framework */; };
 		0572BD8E200B616200503AB0 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0572BD87200B616200503AB0 /* RxAlamofire.framework */; };
 		0572BD91200B640A00503AB0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD90200B640A00503AB0 /* Repository.swift */; };
+		0572BD93200B653B00503AB0 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD92200B653B00503AB0 /* RepositoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		0572BD86200B616200503AB0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0572BD87200B616200503AB0 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		0572BD90200B640A00503AB0 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		0572BD92200B653B00503AB0 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				0572BD52200B5DFA00503AB0 /* AppDelegate.swift */,
 				0572BD54200B5DFA00503AB0 /* ViewController.swift */,
 				0572BD90200B640A00503AB0 /* Repository.swift */,
+				0572BD92200B653B00503AB0 /* RepositoryViewModel.swift */,
 				0572BD56200B5DFA00503AB0 /* Main.storyboard */,
 				0572BD59200B5DFA00503AB0 /* Assets.xcassets */,
 				0572BD5B200B5DFA00503AB0 /* LaunchScreen.storyboard */,
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0572BD93200B653B00503AB0 /* RepositoryViewModel.swift in Sources */,
 				0572BD55200B5DFA00503AB0 /* ViewController.swift in Sources */,
 				0572BD53200B5DFA00503AB0 /* AppDelegate.swift in Sources */,
 				0572BD91200B640A00503AB0 /* Repository.swift in Sources */,
