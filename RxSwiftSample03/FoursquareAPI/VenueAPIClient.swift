@@ -27,11 +27,11 @@ class VenueAPIClient {
                 "query" : query
             ]
 
-            client.request(path: "venues/search", parameter: parameter) { result in
+            client.request(path: "venues/search", parameter: parameter) { [weak self] result in
                 switch result {
                 case let .success(data):
-                    let json = try! JSON(data: data)
-                    let venues = self.parse(json: json["response"]["venues"])
+                    guard let strongSelf = self, let json = try? JSON(data: data) else { return }
+                    let venues = strongSelf.parse(json: json["response"]["venues"])
 
                     //パースしてきたjsonの値を通知対象にする
                     observer.on(.next(venues))
