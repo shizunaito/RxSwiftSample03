@@ -29,7 +29,7 @@
         <!--Search GitHub Repositories-->
         <scene sceneID="aHc-3R-KhT">
             <objects>
-                <viewController id="U0j-el-ML5" customClass="ViewController" customModule="RxSwiftSample03" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="U0j-el-ML5" customClass="RepositoryListViewController" customModule="RxSwiftSample03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W0A-Bu-TNp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

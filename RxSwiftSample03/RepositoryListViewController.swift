@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RepositoryListViewController.swift
 //  RxSwiftSample03
 //
 //  Created by 伊藤静那(Ito Shizuna) on 2018/01/14.
@@ -12,7 +12,7 @@ import RxCocoa
 import ObjectMapper
 import RxAlamofire
 
-class ViewController: UIViewController {
+class RepositoryListViewController: UIViewController {
     @IBOutlet weak var nameSearchBar: UISearchBar!
     @IBOutlet weak var repositoryListTableView: UITableView!
 
