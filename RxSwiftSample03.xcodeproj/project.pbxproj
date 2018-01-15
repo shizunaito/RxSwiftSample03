@@ -94,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0566D110200CCAF500AD5339 /* GitHubAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */,
+				0572BD90200B640A00503AB0 /* Repository.swift */,
+				0572BD92200B653B00503AB0 /* RepositoryViewModel.swift */,
+			);
+			path = GitHubAPI;
+			sourceTree = "<group>";
+		};
 		0572BD46200B5DFA00503AB0 = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				0572BD52200B5DFA00503AB0 /* AppDelegate.swift */,
-				0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */,
-				0572BD90200B640A00503AB0 /* Repository.swift */,
-				0572BD92200B653B00503AB0 /* RepositoryViewModel.swift */,
+				0566D110200CCAF500AD5339 /* GitHubAPI */,
 				0572BD56200B5DFA00503AB0 /* Main.storyboard */,
 				0572BD59200B5DFA00503AB0 /* Assets.xcassets */,
 				0572BD5B200B5DFA00503AB0 /* LaunchScreen.storyboard */,
