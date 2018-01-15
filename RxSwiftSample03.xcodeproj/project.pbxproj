@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0566D112200CCC9200AD5339 /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */; };
+		0566D118200CD24800AD5339 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0566D115200CD24700AD5339 /* SwiftyJSON.framework */; };
+		0566D119200CD24800AD5339 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0566D116200CD24700AD5339 /* SDWebImage.framework */; };
+		0566D11A200CD24800AD5339 /* FoursquareAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0566D117200CD24800AD5339 /* FoursquareAPIClient.framework */; };
 		0572BD53200B5DFA00503AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD52200B5DFA00503AB0 /* AppDelegate.swift */; };
 		0572BD55200B5DFA00503AB0 /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */; };
 		0572BD58200B5DFA00503AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0572BD56200B5DFA00503AB0 /* Main.storyboard */; };
@@ -41,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0566D115200CD24700AD5339 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		0566D116200CD24700AD5339 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		0566D117200CD24800AD5339 /* FoursquareAPIClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoursquareAPIClient.framework; path = Carthage/Build/iOS/FoursquareAPIClient.framework; sourceTree = "<group>"; };
 		0572BD4F200B5DFA00503AB0 /* RxSwiftSample03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSample03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0572BD52200B5DFA00503AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0566D118200CD24800AD5339 /* SwiftyJSON.framework in Frameworks */,
+				0566D119200CD24800AD5339 /* SDWebImage.framework in Frameworks */,
+				0566D11A200CD24800AD5339 /* FoursquareAPIClient.framework in Frameworks */,
 				0572BD88200B616200503AB0 /* ObjectMapper.framework in Frameworks */,
 				0572BD8A200B616200503AB0 /* RxSwift.framework in Frameworks */,
 				0572BD8C200B616200503AB0 /* RxCocoa.framework in Frameworks */,
@@ -104,6 +114,13 @@
 			path = GitHubAPI;
 			sourceTree = "<group>";
 		};
+		0566D111200CCBEE00AD5339 /* FoursquareAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FoursquareAPI;
+			sourceTree = "<group>";
+		};
 		0572BD46200B5DFA00503AB0 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				0572BD52200B5DFA00503AB0 /* AppDelegate.swift */,
+				0566D111200CCBEE00AD5339 /* FoursquareAPI */,
 				0566D110200CCAF500AD5339 /* GitHubAPI */,
 				0572BD56200B5DFA00503AB0 /* Main.storyboard */,
 				0572BD59200B5DFA00503AB0 /* Assets.xcassets */,
@@ -159,6 +177,9 @@
 		0572BD80200B616100503AB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0566D117200CD24800AD5339 /* FoursquareAPIClient.framework */,
+				0566D116200CD24700AD5339 /* SDWebImage.framework */,
+				0566D115200CD24700AD5339 /* SwiftyJSON.framework */,
 				0572BD86200B616200503AB0 /* Alamofire.framework */,
 				0572BD81200B616200503AB0 /* ObjectMapper.framework */,
 				0572BD87200B616200503AB0 /* RxAlamofire.framework */,
@@ -311,6 +332,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FoursquareAPIClient.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
@@ -336,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0566D112200CCC9200AD5339 /* RepositoryListViewController.swift in Sources */,
 				0572BD68200B5DFA00503AB0 /* RxSwiftSample03Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

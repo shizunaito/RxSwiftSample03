@@ -1,3 +1,6 @@
 github "ReactiveX/RxSwift" ~> 4.0
 github "RxSwiftCommunity/RxAlamofire" "master"
 github "Hearst-DD/ObjectMapper" ~> 3.1
+github "SwiftyJSON/SwiftyJSON"
+github "koogawa/FoursquareAPIClient"
+github "rs/SDWebImage"
