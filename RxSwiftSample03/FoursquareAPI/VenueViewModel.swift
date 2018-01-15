@@ -7,7 +7,30 @@
 //
 
 import UIKit
+import RxSwift
+import SwiftyJSON
+import FoursquareAPIClient
 
-class VenueViewModel: NSObject {
+class VenueViewModel {
+    fileprivate(set) var venues = Variable<[Venue]>([])
 
+    let client = VenueAPIClient()
+    let disposeBag = DisposeBag()
+
+    init() {}
+
+    public func fetch(query: String = "") {
+        client.search(query: query)
+            .subscribe { [weak self] result in
+                switch result {
+                case .next(let value):
+                    self?.venues.value = value
+                case .error(let error):
+                    print(error)
+                case .completed:
+                    ()
+                }
+            }
+            .disposed(by: disposeBag)
+    }
 }
