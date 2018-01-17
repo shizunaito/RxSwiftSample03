@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055BF571200F6F7900536E0F /* VenueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055BF570200F6F7900536E0F /* VenueCell.xib */; };
+		055BF573200F73F300536E0F /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BF572200F73F300536E0F /* VenueCell.swift */; };
+		055BF575200F797700536E0F /* VenueDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BF574200F797700536E0F /* VenueDataSource.swift */; };
+		055BF577200F7CB000536E0F /* VenueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BF576200F7CB000536E0F /* VenueDelegate.swift */; };
 		0566D112200CCC9200AD5339 /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */; };
 		0566D118200CD24800AD5339 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0566D115200CD24700AD5339 /* SwiftyJSON.framework */; };
 		0566D119200CD24800AD5339 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0566D116200CD24700AD5339 /* SDWebImage.framework */; };
@@ -14,6 +18,7 @@
 		0566D11C200CD37D00AD5339 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566D11B200CD37D00AD5339 /* Venue.swift */; };
 		0566D11E200CD9DB00AD5339 /* VenueAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566D11D200CD9DB00AD5339 /* VenueAPIClient.swift */; };
 		0566D120200CE07300AD5339 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566D11F200CE07300AD5339 /* VenueViewModel.swift */; };
+		0566D122200CE39100AD5339 /* VenueSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566D121200CE39100AD5339 /* VenueSearchViewController.swift */; };
 		0572BD53200B5DFA00503AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD52200B5DFA00503AB0 /* AppDelegate.swift */; };
 		0572BD55200B5DFA00503AB0 /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */; };
 		0572BD58200B5DFA00503AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0572BD56200B5DFA00503AB0 /* Main.storyboard */; };
@@ -48,12 +53,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		055BF570200F6F7900536E0F /* VenueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueCell.xib; sourceTree = "<group>"; };
+		055BF572200F73F300536E0F /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		055BF574200F797700536E0F /* VenueDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDataSource.swift; sourceTree = "<group>"; };
+		055BF576200F7CB000536E0F /* VenueDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDelegate.swift; sourceTree = "<group>"; };
 		0566D115200CD24700AD5339 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		0566D116200CD24700AD5339 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		0566D117200CD24800AD5339 /* FoursquareAPIClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoursquareAPIClient.framework; path = Carthage/Build/iOS/FoursquareAPIClient.framework; sourceTree = "<group>"; };
 		0566D11B200CD37D00AD5339 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		0566D11D200CD9DB00AD5339 /* VenueAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIClient.swift; sourceTree = "<group>"; };
 		0566D11F200CE07300AD5339 /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
+		0566D121200CE39100AD5339 /* VenueSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchViewController.swift; sourceTree = "<group>"; };
 		0572BD4F200B5DFA00503AB0 /* RxSwiftSample03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSample03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0572BD52200B5DFA00503AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0572BD54200B5DFA00503AB0 /* RepositoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +136,11 @@
 				0566D11B200CD37D00AD5339 /* Venue.swift */,
 				0566D11D200CD9DB00AD5339 /* VenueAPIClient.swift */,
 				0566D11F200CE07300AD5339 /* VenueViewModel.swift */,
+				055BF574200F797700536E0F /* VenueDataSource.swift */,
+				055BF576200F7CB000536E0F /* VenueDelegate.swift */,
+				0566D121200CE39100AD5339 /* VenueSearchViewController.swift */,
+				055BF570200F6F7900536E0F /* VenueCell.xib */,
+				055BF572200F73F300536E0F /* VenueCell.swift */,
 			);
 			path = FoursquareAPI;
 			sourceTree = "<group>";
@@ -308,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0572BD5D200B5DFA00503AB0 /* LaunchScreen.storyboard in Resources */,
+				055BF571200F6F7900536E0F /* VenueCell.xib in Resources */,
 				0572BD5A200B5DFA00503AB0 /* Assets.xcassets in Resources */,
 				0572BD58200B5DFA00503AB0 /* Main.storyboard in Resources */,
 			);
@@ -360,11 +376,15 @@
 			files = (
 				0572BD93200B653B00503AB0 /* RepositoryViewModel.swift in Sources */,
 				0566D11E200CD9DB00AD5339 /* VenueAPIClient.swift in Sources */,
+				055BF575200F797700536E0F /* VenueDataSource.swift in Sources */,
+				0566D122200CE39100AD5339 /* VenueSearchViewController.swift in Sources */,
+				055BF573200F73F300536E0F /* VenueCell.swift in Sources */,
 				0566D11C200CD37D00AD5339 /* Venue.swift in Sources */,
 				0572BD55200B5DFA00503AB0 /* RepositoryListViewController.swift in Sources */,
 				0566D120200CE07300AD5339 /* VenueViewModel.swift in Sources */,
 				0572BD53200B5DFA00503AB0 /* AppDelegate.swift in Sources */,
 				0572BD91200B640A00503AB0 /* Repository.swift in Sources */,
+				055BF577200F7CB000536E0F /* VenueDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

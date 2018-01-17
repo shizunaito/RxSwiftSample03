@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9dM-ge-ayf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m8Q-Bu-kGS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -90,6 +90,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GwX-av-8Ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="877.60000000000002" y="277.51124437781112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jfe-j6-sjB">
+            <objects>
+                <navigationController id="m8Q-Bu-kGS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oka-C9-aqO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VDG-A2-opW" kind="relationship" relationship="rootViewController" id="e8D-hi-7Ju"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNE-H7-W9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="1003"/>
+        </scene>
+        <!--Foursquare API Client-->
+        <scene sceneID="qct-d3-HTx">
+            <objects>
+                <viewController id="VDG-A2-opW" customClass="VenueSearchViewController" customModule="RxSwiftSample03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Psd-Rt-UTm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ldk-Be-yin">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jqe-0Q-pD3">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jqe-0Q-pD3" firstAttribute="leading" secondItem="I2x-f1-eTA" secondAttribute="leading" id="5pw-G2-8RM"/>
+                            <constraint firstItem="Ldk-Be-yin" firstAttribute="top" secondItem="I2x-f1-eTA" secondAttribute="top" id="CrW-TW-FY8"/>
+                            <constraint firstItem="Ldk-Be-yin" firstAttribute="trailing" secondItem="I2x-f1-eTA" secondAttribute="trailing" id="M3D-TQ-5bt"/>
+                            <constraint firstItem="jqe-0Q-pD3" firstAttribute="bottom" secondItem="I2x-f1-eTA" secondAttribute="bottom" id="OjV-iW-c28"/>
+                            <constraint firstItem="jqe-0Q-pD3" firstAttribute="trailing" secondItem="I2x-f1-eTA" secondAttribute="trailing" id="Yjl-xS-Cpi"/>
+                            <constraint firstItem="jqe-0Q-pD3" firstAttribute="top" secondItem="Ldk-Be-yin" secondAttribute="bottom" id="ZYf-6p-4ea"/>
+                            <constraint firstItem="Ldk-Be-yin" firstAttribute="leading" secondItem="I2x-f1-eTA" secondAttribute="leading" id="fDs-VX-6nO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I2x-f1-eTA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Foursquare API Client" id="VnW-j1-LwT"/>
+                    <connections>
+                        <outlet property="venueSearchBar" destination="Ldk-Be-yin" id="LwS-hq-rpg"/>
+                        <outlet property="venueSearchTableView" destination="jqe-0Q-pD3" id="cc9-9K-LS9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXX-Nc-hdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="1002.5487256371815"/>
         </scene>
     </scenes>
 </document>
