@@ -23,7 +23,7 @@ class VenueAPIClient {
             let client = FoursquareAPIClient(clientId: foresquareClientid, clientSecret: foresquareClientsecret)
 
             let parameter: [String : String] = [
-                "li" : self.ShinOtsukaLi,
+                "ll" : self.ShinOtsukaLi,
                 "query" : query
             ]
 
